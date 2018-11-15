@@ -94,7 +94,16 @@ function inches() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 5 CODE HERE
-
+let miles = (inches/63360);
+miles = (Math.floor(miles));
+let yards = (inches % 63360/36);
+yards = (Math.floor(yards));
+let feet = (inches % 63360 % 36/12);
+feet = (Math.floor(feet));
+let inchy = (inches % 63360 % 36 % 12);
+inchy = (Math.floor(inchy));
+var div = document.getElementById ("output5");
+div.innerHTML = ("Miles: " + miles + "<br>Yards: " + yards + "<br>Feet: " + feet + "<br>Inches: " + inchy);
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
@@ -118,6 +127,14 @@ function centimeters() {
   /////////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 6 CODE HERE
+let kilometers = (centimeters/100000);
+kilometers = (Math.floor(kilometers));
+let meters = (centimeters % 100000/100);
+meters = (Math.floor(meters));
+let centi = (centimeters % 100000 % 100);
+centi = (Math.floor(centi));
+var div = document.getElementById("output6");
+div.innerHTML = ("Kilometers: " + kilometers + "<br>Meters: " + meters + "<br>Centimeters: " + centi);
 
   /////////////////////////////// DO NOT MODIFY
   check("centimeters", input); // DO NOT MODIFY
